@@ -66,7 +66,7 @@ export default class MultiSlider extends React.Component {
       },
       customMarker: DefaultMarker,
       style: {
-        width: width - 30,
+        width: width * 0.8,
       }
     };
 
@@ -241,8 +241,8 @@ export default class MultiSlider extends React.Component {
       const markerContainerTwo = { top: -24, right: trackThreeLength - 24 };
 
       return (
-        <View style={[styles.container, this.props.style]}>
-          <View style={[styles.fullTrack, { width: this.props.style.width }]}>
+        <View style={[styles.container]}>
+          <View style={[styles.fullTrack, { width: style.width }]}>
             <View style={[styles.track, this.props.trackStyle, trackOneStyle, { width: trackOneLength } ]} />
             <View style={[styles.track, this.props.trackStyle, trackTwoStyle, { width: trackTwoLength } ]} />
             {twoMarkers && (
@@ -293,7 +293,8 @@ const styles = StyleSheet.create({
     position: 'relative',
     justifyContent:'center',
     height: 40,
-    left:15,
+    // left:15,
+    alignItems:'center'
   },
   fullTrack: {
     flexDirection: 'row',
