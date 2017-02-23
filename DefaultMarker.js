@@ -46,9 +46,9 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.2,
       },
       android: {
-        height: 12,
-        width: 12,
-        borderRadius: 12,
+        height: 20,
+        width: 20,
+        borderRadius: 20,
         backgroundColor: '#0D8675',
       }
     }),
