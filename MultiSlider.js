@@ -46,15 +46,6 @@ export default class MultiSlider extends React.Component {
 
     static defaultProps = {
       values: [0],
-      onValuesChangeStart: () => {
-        console.log('press started');
-      },
-      onValuesChange: (values) => {
-        console.log('changing', values);
-      },
-      onValuesChangeFinish: (values) => {
-        console.log('changed', values);
-      },
       step: 1,
       min: 0,
       max: 10,
