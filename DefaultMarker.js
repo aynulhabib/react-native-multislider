@@ -10,8 +10,6 @@ import {
 export default class DefaultMarker extends React.Component {
   static propTypes = {
     pressed: PropTypes.bool,
-    pressedMarkerStyle: View.propTypes.style,
-    markerStyle: View.propTypes.style
   };
 
   render() {
